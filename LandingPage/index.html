@@ -5,26 +5,39 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="contato.css">
-    <link rel="stylesheet" href="cursos.css">
-    <link rel="stylesheet" href="footer.css">
-    <link rel="stylesheet" href="header.css">
-    <link rel="stylesheet" href="sobre.css">
+    <link rel="stylesheet" href="css\contato.css">
+    <link rel="stylesheet" href="css\cursos.css">
+    <link rel="stylesheet" href="css\footer.css">
+    <link rel="stylesheet" href="css\header.css">
+    <link rel="stylesheet" href="css\sobre.css">
+    <link rel="stylesheet" href="css\banner.css">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <title>Universidade DaHora</title>
 </head>
 
 <body>
     <header class="header">
-        <image src="images.png" class="logo">
-        <nav>
+        <div class="logo-area">
+            <image src="assets\logo.png" class="logo"></image>
+        </div>
+        
+        <nav class="menu-area">
             <ul class="menu">
-                <li><a></a>Sobre</li>
-                <li><a></a>Cursos</li>
-                <li><a></a>Contato</li>
+                <li><a>Sobre</a></li>
+                <li><a>Cursos</a></li>
+                <li><a>Contato</a></li>
 
             </ul>
         </nav>
     </header>
+
+    <div class="banner-area">
+        <div class="banner">
+            <div><img src="assets\Oxford.jpg"></div>
+            <div><img src="assets\cambridge.jpg"></div>
+          </div>
+
+    </div>
 
     <div class="sobre">
         Nossa Universidade tem os melhores cursos para você<br>
@@ -42,8 +55,24 @@
     </div>
 
     <footer class="footer">
-        contatos
+        <div class="texto">
+            desenvolvido por eu
+        </div>
+
+        <div class="redes-area">
+            <ul class="redes">
+                <li><a target="_blank" href="https://twitter.com/HarvardEXT"><img src="">twi</a></li>
+                <li><a target="_blank" href="https://www.facebook.com/HarvardExtension">face<img src=""></a></li>
+                <li><a target="_blank" href="https://www.instagram.com/harvardextension/">inst<img src=""></a></li>
+
+            </ul>
+        </div>
+        
     </footer>
-<script src="script.js"></script>
+
+    <script type="text/javascript" src="js\script.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 </body>
 </html>

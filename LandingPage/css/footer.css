@@ -1,0 +1,26 @@
+.footer{
+    background-color: black;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.redes-area{
+    width: 25%;
+    height: 100%;  
+       
+}
+
+.redes{
+    display: flex;
+    justify-content: space-around;
+}
+
+.redes li{
+    list-style: none;
+    font-size: 18px;
+    color: lightgray;
+    cursor: pointer;
+    
+}

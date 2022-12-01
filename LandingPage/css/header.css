@@ -1,0 +1,49 @@
+.header{
+    background-color: #111;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.menu-area{
+    width: 40%;
+    height: 100%;  
+       
+}
+
+.menu{
+    display: flex;
+    justify-content: space-around;
+}
+
+.menu li{
+    list-style: none;
+    font-size: 18px;
+    color: lightgray;
+    cursor: pointer;
+}
+
+.menu li:hover{
+    list-style: none;
+    font-size: 18px;
+    color: lightskyblue;
+}
+
+.menu li:visited{
+    list-style: none;
+    font-size: 18px;
+    color: purple;
+    border-bottom: 1px, solid, purple;
+}
+
+.logo{
+    width: 30%;
+    height: 30%;
+}
+
+.logo-area{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+}
