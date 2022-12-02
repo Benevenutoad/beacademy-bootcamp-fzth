@@ -18,20 +18,19 @@
 
 .menu li{
     list-style: none;
-    font-size: 18px;
+    font-size: 24px;
     color: lightgray;
     cursor: pointer;
+    padding-top: 40px;
 }
 
 .menu li:hover{
     list-style: none;
-    font-size: 18px;
     color: lightskyblue;
 }
 
 .menu li:visited{
     list-style: none;
-    font-size: 18px;
     color: purple;
     border-bottom: 1px, solid, purple;
 }
@@ -44,6 +43,6 @@
 .logo-area{
     width: 20%;
     height: 100%;
-    display: flex;
-    justify-content: space-around;
+    margin-top: 10px;
+    margin-left: 30px;
 }
