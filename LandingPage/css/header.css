@@ -14,25 +14,28 @@
 .menu{
     display: flex;
     justify-content: space-around;
+    padding-top: 40px;
 }
 
-.menu li{
+.menu li a{
+    text-decoration: none;
     list-style: none;
     font-size: 24px;
     color: lightgray;
     cursor: pointer;
-    padding-top: 40px;
+    
 }
 
-.menu li:hover{
+.menu li a:hover{
     list-style: none;
     color: lightskyblue;
 }
 
-.menu li:visited{
+.menu li a:visited{
     list-style: none;
     color: purple;
-    border-bottom: 1px, solid, purple;
+    text-decoration: underline, 1px, solid, purple;
+    
 }
 
 .logo{
