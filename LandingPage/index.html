@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="css\header.css">
     <link rel="stylesheet" href="css\sobre.css">
     <link rel="stylesheet" href="css\banner.css">
+    <link rel="stylesheet" href="css\responsive.css">
 
     <meta name="description" content="Excelência em Ensino Superior">
     <meta name="keywords" content="universidade, ensino superior, curso superior">
@@ -90,8 +91,35 @@
 
     </div>
 
-    <div class="contato">
-        <p><h2><strong> <a name="CONTATO">Quer saber mais sobre nossos cursos? Deixe aqui seu contato</a></strong></h2></p>
+    <div class="contato">        
+        
+        <form class="form" id="form">
+            <p id="cabecalho"><h2><strong> <a name="CONTATO">Quer saber mais sobre nossos cursos? Faça seu cadastro</a></strong></h2></p>
+            
+            <div class="form-control">
+                <label for="username">Nome de Usuário</label>
+                <input type="text" id="username" placeholder="Digite seu Usuário"/>
+                <small>Mensagem de erro</small>
+            </div>
+            <div class="form-control">
+                <label for="email">Email</label>
+                <input type="text" id="email" placeholder="Digite seu Email"/>
+                <small>Mensagem de erro</small>
+            </div>
+            <div class="form-control">
+                <label for="password">Senha</label>
+                <input type="text" id="password" placeholder="Digite sua Senha"/>
+                <small>Mensagem de erro</small>
+            </div>
+            <div class="form-control">
+                <label for="password-confirmation">Confirme sua Senha</label>
+                <input type="text" id="password-confirmation" placeholder="Repita sua Senha"/>
+                <small>Mensagem de erro</small>
+            </div>
+            
+            <button type="submit">Enviar</button>
+        </form>
+    
     </div>
 
     <footer class="footer">
