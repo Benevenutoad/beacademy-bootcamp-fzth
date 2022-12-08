@@ -1,9 +1,27 @@
+@media screen and (max-width: 959px){
+    .area-cursos{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;   
+    }
+    
+    .bloco-curso {
+        padding-top: 25px;
+        padding-bottom: 25px;  
+     }
+
+}
+
+
 @media screen and (max-width: 767px){
+    .menu{
+      display: flex;
+      justify-content: space-around;
+      flex-direction: column;
+    }
 
-    
+    .logo{
+        width: 104px;
+        height: 114px;
+    }
 }
-
-@media screen and (max-width: 1023px){
-    
-}
-

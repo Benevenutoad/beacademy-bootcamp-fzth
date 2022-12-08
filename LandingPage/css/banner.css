@@ -1,4 +1,15 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
 .banner{
     margin-left: 25px;
    
+}
+
+.banner-img{
+    width: 100% auto;
+    height: 100% auto;
 }
