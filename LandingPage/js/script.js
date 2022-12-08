@@ -1,3 +1,6 @@
+//////* FORMULÁRIO*//////
+
+
 const form = document.getElementById("form");
 const username = document.getElementById("username");
 const email = document.getElementById("email");
@@ -64,3 +67,28 @@ function checkEmail(email) {
     email
   );
 }
+
+
+
+//////* CEP*///////
+
+async function getCep(){
+
+  try{
+
+    let response = await fetch('https://viacep.com.br/ws/18030070/json/');
+    let data = await response.json()
+    document.getElementById("rua").innerHTML = data.logradouro
+    document.getElementById("bairro").innerHTML = data.bairro
+    document.getElementById("cidade").innerHTML = data.localidade
+    document.getElementById("estado").innerHTML = data.uf
+    
+
+  } catch (error) {
+    throw new Error('Erro ao buscar o endereço')
+    
+  }
+
+}
+
+getCep()

@@ -8,7 +8,9 @@
 
 .redes-area{
     width: 25%;
-    height: 100%;  
+    height: 100%; 
+    margin-top: 15px; 
+    margin-bottom: 15px;
        
 }
 
@@ -29,4 +31,14 @@
 
     padding-top: 20px;
     padding-left: 25px;
+    margin-top: 15px; 
+    margin-bottom: 15px;
 }
+
+.endereco{
+    width: 25%;
+    margin-top: 15px; 
+    margin-bottom: 15px;
+    margin-left: 35px;
+}
+
