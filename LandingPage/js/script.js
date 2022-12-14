@@ -9,11 +9,15 @@ const email = document.getElementById("email");
 const password = document.getElementById("password");
 const passwordConfirmation = document.getElementById("password-confirmation");
 
+//* EVENTO DO BOTÃO*//
+
 form.addEventListener("submit", (e) => {
   e.preventDefault();
 
   checkInputs();
 });
+
+//* VALIDAÇÃO DOS CAMPOS*//
 
 function checkInputs() {
   const usernameValue = username.value;
@@ -52,6 +56,8 @@ function checkInputs() {
   }
 }
 
+//* ALTERAÇÃO DO NOME DA CLASSE*//
+
 function setErrorFor(input, message) {
   const formControl = input.parentElement;
   const small = formControl.querySelector("small");
@@ -64,6 +70,8 @@ function setSuccessFor(input) {
   formControl.className = "form-control success";
 }
 
+
+//* VALIDAÇÃO DO EMAIL*//
 function checkEmail(email) {
   return /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(
     email
