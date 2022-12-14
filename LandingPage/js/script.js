@@ -1,17 +1,25 @@
 //////* FORMULÁRIO*//////
 
 
+//* MAPEAMENTO DO FORMULÁRIO*//
+
 const form = document.getElementById("form");
 const username = document.getElementById("username");
 const email = document.getElementById("email");
 const password = document.getElementById("password");
 const passwordConfirmation = document.getElementById("password-confirmation");
 
+
+//* EVENTO DO BOTÃO*//
+
 form.addEventListener("submit", (e) => {
   e.preventDefault();
 
   checkInputs();
 });
+
+
+//* CHECAGEM DOS INPUTS*//
 
 function checkInputs() {
   const usernameValue = username.value;
@@ -50,6 +58,9 @@ function checkInputs() {
   }
 }
 
+
+//* SETAR O CSS DE ACORDO COM A CHECAGEM*//
+
 function setErrorFor(input, message) {
   const formControl = input.parentElement;
   const small = formControl.querySelector("small");
@@ -61,6 +72,9 @@ function setSuccessFor(input) {
   const formControl = input.parentElement;
   formControl.className = "form-control success";
 }
+
+
+//* CHECAGEM DO EMAIL*//
 
 function checkEmail(email) {
   return /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(
