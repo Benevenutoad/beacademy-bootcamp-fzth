@@ -97,7 +97,7 @@ async function getCep(){
 
   } catch (error) {
     throw new Error('Erro ao buscar o endereço')
-    
+        
   }
 
 }

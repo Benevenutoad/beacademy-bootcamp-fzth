@@ -31,6 +31,11 @@
     display: inline-block;
     margin-bottom: 5px;
   }
+
+  .form-control input {
+    max-width: 95%;
+  }
+
   .form button {
     background-color: orangered;
     border: 2px solid orangered;
@@ -39,6 +44,8 @@
     width: 100%;
     border-radius: 10px;
     padding: 10px;
+    cursor: pointer; 
+
   }
  
   .form-control input {
@@ -57,7 +64,7 @@
     visibility: hidden;
   }
 
- //* SUCESSO E FALHA*//
+ /* SUCESSO E FALHA*/
 
    
   .form-control.success input {
